@@ -1,5 +1,7 @@
 package ficha2;
 
+import java.util.Objects;
+
 public class GuardaValor
 {
 	private int $segundos;
@@ -86,6 +88,26 @@ public class GuardaValor
 	public void set$meses(int $meses)
 	{
 		this.$meses = $meses;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return Objects.hash($dias, $horas, $meses, $minutos, $segundos);
+	}
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		GuardaValor other = (GuardaValor) obj;
+		return $dias == other.$dias && $horas == other.$horas && $meses == other.$meses && $minutos == other.$minutos
+				&& $segundos == other.$segundos;
 	}
 
 	@Override
