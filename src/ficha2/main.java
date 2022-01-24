@@ -1,14 +1,29 @@
 package ficha2;
 
+import java.util.Calendar;
+
+//Exercicio1
+
 public class main {
+		
+	public static int areaTriang(int altura, int base)
+		  {
+		    int areaTriangulo = (altura * base )/2;
 
-	public main() {
-		// TODO Auto-generated constructor stub
+		    return areaTriangulo;
+		  }
+	
+	public areaRetang(int altura, int comprimento) {
+		
+		
+		
+		
+		
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
+
+//Exercicio2
+
 
 }
