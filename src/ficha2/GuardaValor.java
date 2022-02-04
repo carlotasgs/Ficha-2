@@ -113,8 +113,8 @@ public class GuardaValor
 	@Override
 	public String toString()
 	{
-		return "GuardaValor [$segundos=" + $segundos + ", $minutos=" + $minutos + ", $horas=" + $horas + ", $dias="
-				+ $dias + ", $meses=" + $meses + "]";
+		return "segundos=" + $segundos + ", minutos=" + $minutos + ", horas=" + $horas + ", dias=" + $dias + ", meses="
+				+ $meses + " ";
 	}
 
 }
