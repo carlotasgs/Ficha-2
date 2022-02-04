@@ -2,19 +2,20 @@ package ficha2;
 
 import java.util.Scanner;
 
-public class Vogais
+public class Ex7
 {
 
-	public static int Vogais(String aFrase)
+	public static void numVogais(String aFrase)
 	{
+		System.out.println("This frase contains ");
 		int num = 0;
 		char[] _vogaiStrings =
 		{ 'a', 'A', 'o', 'O', 'i', 'I', 'e', 'E', 'u', 'U' };
 
-		for (int n = 0; n < aFrase.length(); n++)
+		for (int i = 0; i < _vogaiStrings.length; i++)
 		{
 
-			for (int i = 0; i < _vogaiStrings.length; i++)
+			for (int n = 0; n < aFrase.length(); n++)
 			{
 
 				if (_vogaiStrings[i] == aFrase.charAt(n))
@@ -23,9 +24,10 @@ public class Vogais
 				}
 
 			}
+			if (num != 0)
+				System.out.println(_vogaiStrings[i] + ": " + num);
+			num = 0;
 		}
-
-		return num;
 	}
 
 	public static void main(String[] args)
@@ -33,7 +35,7 @@ public class Vogais
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Insert your frase: ");
 
-		System.out.println("This frase contains " + Vogais(sc.nextLine()) + " vogais.");
+		numVogais(sc.nextLine());
 		sc.close();
 	}
 

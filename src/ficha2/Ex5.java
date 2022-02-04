@@ -4,7 +4,7 @@ package ficha2;
 // Ex. 5:Crie uma função chamada factorRecursivo que recebe um argumento (n) e calcula o seu fatorial (recursivamente).
 import java.util.Scanner;
 
-public class Fatorial
+public class Ex5
 {
 
 	public static void main(String[] args)
@@ -13,7 +13,7 @@ public class Fatorial
 		System.out.println("Insert a number");
 		int myNum = sc.nextInt();
 
-		Fatorial r = new Fatorial();
+		Ex5 r = new Ex5();
 		int resp = r.fatorial(myNum);
 
 		System.out.println("O seu fatorial (recursivamente) - " + resp);

@@ -2,9 +2,9 @@ package ficha2;
 
 import java.util.Calendar;
 
+public class Ex1_2_3_4 {
+	
 //Exercicio1
-
-public class main {
 		
 	public static int areaTriang(int altura, int base)
 		  {
@@ -51,6 +51,6 @@ public class main {
 		}
 	return fact;
 	}
-
+	
 
 }
